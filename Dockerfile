@@ -1,7 +1,7 @@
 FROM debian:stretch
 ARG debian_mirror=deb.debian.org
 ARG fiji=fiji-linux64-20140602.tar.gz
-ARG commit=ef54ded3ed058c03dfb204b5f02876f6f3f37ea
+ARG commit=ef54ded3ed058c03dfb204b5f02876f6f3f37ea5
 ARG user=3d4pi
 ADD $fiji /opt
 RUN sed -r -i -e s/deb.debian.org/$debian_mirror/ /etc/apt/sources.list \
